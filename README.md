@@ -20,18 +20,19 @@ This project implements a basic garbage collector in C to automate memory manage
 2. Navigate to the project directory in your terminal.
 3. Compile the source code:
     ```bash
-    gcc -o gc_program gc.c
+    cd Garbage-collector
+    g++ src/main.c
     ```
     Use code with caution.
 4. Run the program:
     ```bash
-    ./gc_program
+    ./a.out
     ```
     Use code with caution.
 
 ## Example Usage
 
-The provided `gc_program.c` demonstrates basic usage of the garbage collector. It allocates memory dynamically and triggers garbage collection when necessary.
+The provided `main.c` demonstrates basic usage of the garbage collector. It allocates memory dynamically and triggers garbage collection when necessary.
 
 ## Implementation Details
 

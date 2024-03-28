@@ -58,7 +58,7 @@ typedef struct
 // creates and initialises a Virtual machine
 VM *newVM()
 {
-    VM *vm = malloc(sizeof(VM));
+    VM *vm = (VM *)malloc(sizeof(VM)); // Explicitly cast the void* to VM*
     vm->stackSize = 0;
 
     vm->firstObject = NULL;
@@ -91,7 +91,7 @@ Object *newObject(VM *vm, ObjectType type)
     if (vm->numObjects == vm->maxObjects)
         gc(vm);
 
-    Object *object = malloc(sizeof(Object));
+    Object *object = (Object *)malloc(sizeof(Object)); // Explicitly cast the void* to Object*
     object->type = type;
     object->marked = 0;
 
