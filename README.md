@@ -21,12 +21,12 @@ This project implements a basic garbage collector in C to automate memory manage
 3. Compile the source code:
     ```bash
     cd Garbage-collector
-    g++ src/main.c
+    g++ src/main.c -o main
     ```
     Use code with caution.
 4. Run the program:
     ```bash
-    ./a.out
+    ./main.out
     ```
     Use code with caution.
 
